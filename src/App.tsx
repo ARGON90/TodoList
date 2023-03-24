@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import TodoForm from "./components/TodoForm";
+import AllBoards from "./components/AllBoards";
+import Box from "@mui/material/Box";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Box className="App">
+      <Box className="page-container">
+        <TodoForm />
+
+        <Box style={{display: "flex", flexDirection: "column"}}>
+        <h1
+          style={{
+            fontSize: "40px",
+            marginBottom: "10px",
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          Todo List
+        </h1>
+        <AllBoards />
+        </Box>
+      </Box>
+    </Box>
   );
 }
 

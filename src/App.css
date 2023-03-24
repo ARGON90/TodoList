@@ -2,37 +2,132 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f3f3f3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  row-gap: 10px;
+}
+
+.ind-form-box {
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 0px 0px;
+}
+
+.add-todo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 8px;
+  padding: 10px 0px;
+
+}
+
+.create-template-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.existing-template {
+  padding-top: 10px;
+}
+
+.top-form-box {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-text {
+  width: 30%;
+}
+
+.all-boards-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+  justify-content: space-evenly;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.all-boards-container .board {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #313131;
+  min-height: 1000px;
+  padding: 15px;
+  padding-bottom: 400px;
+}
+
+.all-boards-container .board .card {
+  padding: 15px 25px;
+  background-color: #f3f3f3;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.ind-board-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 300px;
+  min-height: 1000px;
 }
 
-.App-link {
-  color: #61dafb;
+.all-btns-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.del-edit-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.save-template-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.edit-todo-form {
+  display: flex;
+  flex-direction: column;
+  background-color: blanchedalmond;
+  border-radius: 8px;
+  padding-top: 10px;
+}
+
+.edit-todo-btns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 10px;
+  padding-bottom: 20px;
 }
