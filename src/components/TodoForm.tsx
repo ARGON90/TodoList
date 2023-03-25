@@ -315,7 +315,7 @@ const TodoForm = () => {
           variant="contained"
           size="small"
           onClick={() => {
-            handleTodoSubmit("inProgress");
+            handleTodoSubmit("inProgress")
           }}
           className=".form-submit-btn"
         >
